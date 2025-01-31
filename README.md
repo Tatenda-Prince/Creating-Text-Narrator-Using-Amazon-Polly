@@ -55,7 +55,7 @@ Choose create bucket and leave everything as default
 
 1.3.Now that our bucket is successfully created see example, leave the bucket empty becuase lambda will save the mp3 audios here.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/deecbbb3d811482ade41b04d4d173a420b674353/img/Screenshot%202025-01-31%20100804.png)
 
 
 ##  Step 2: Configure IAM Role for AWS Lambda
