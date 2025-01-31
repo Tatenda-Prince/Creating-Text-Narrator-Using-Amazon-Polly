@@ -160,7 +160,7 @@ Click "Create API."
 
 Choose "HTTP API" and click "Build."
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/8d94db51e986d7428b742d03a4a9840841e7ef7f/img/Screenshot%202025-01-31%20101628.png)
 
 
 4.2.Name the API with any name you want
