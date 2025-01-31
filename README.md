@@ -204,7 +204,7 @@ Click "Deploy API."
 
 Choose a stage (e.g., `prod`).
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/cb1eb6866fd7a2931e94f7f7999d10c874b382f3/img/Screenshot%202025-01-31%20102150.png)
 
 
 Note the API endpoint URL (e.g., `https://<api-id>.execute-api.<region>.amazonaws.com/prod`).
