@@ -91,7 +91,7 @@ Amazon Polly:`AmazonPollyFullAccess `
 3.2.Choose Start Author from Scratch and give your lambda function a name
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/870387452468c32c4e0a2223db1f84cbbb982387/img/Screenshot%202025-01-31%20101314.png)
 
 
 3.3.Now add Permissions choose the existing role that we have created ealier see example below-
