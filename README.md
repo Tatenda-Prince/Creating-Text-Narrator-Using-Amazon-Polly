@@ -96,7 +96,7 @@ Amazon Polly:`AmazonPollyFullAccess `
 
 3.3.Now add Permissions choose the existing role that we have created ealier see example below-
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/fdc1003b56f10abffd57860c9b19d952deec0163/img/Screenshot%202025-01-31%20101335.png)
 
 
 Proceed to create your functin by clicking the orange button below
