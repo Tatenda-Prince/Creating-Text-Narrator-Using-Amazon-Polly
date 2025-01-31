@@ -65,7 +65,7 @@ Choose create bucket and leave everything as default
 
 2.2.AWS Services: select Lambda
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/0137cd19b32e65ca70f977d708690421ba1b9aa8/img/Screenshot%202025-01-31%20100852.png)
 
 
 2.3.On Policies we are to choose three policies
