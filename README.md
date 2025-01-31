@@ -241,7 +241,7 @@ Body: `{"body": "Hello, this is a test narration."}`
 6.3.Verify that the audio file is present and downloadable.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/816fe73e32d61d159b635c6116485adecab61ed0/img/Screenshot%202025-01-31%20103952.png)
 
 
 
