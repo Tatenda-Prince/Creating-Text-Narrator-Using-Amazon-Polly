@@ -50,7 +50,7 @@ Access the AWS Management Console and search for Amazon S3.
 
 Choose create bucket and leave everything as default
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/296ff2fb3aa29813700a52b69cca9a9e6bfb82d0/img/Screenshot%202025-01-31%20100742.png)
 
 
 1.3.Now that our bucket is successfully created see example, leave the bucket empty becuase lambda will save the mp3 audios here.
