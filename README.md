@@ -174,11 +174,11 @@ Click "Next."
 
 4.3.Add a Resource 
 
-Under Resources "click" create Resource and name it "narater"
+Under Resources "click" create Resource and name it "narrater"
 
 Note: Enable the CORS feature
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/90f970867529613ca009bbbe4c731a68c1ef0e95/img/Screenshot%202025-01-31%20101835.png)
 
 
 4.4.Set the method to `POST` and the path to `/narrate`.
