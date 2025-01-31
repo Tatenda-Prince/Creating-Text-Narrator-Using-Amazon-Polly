@@ -81,7 +81,84 @@ Amazon Polly:`AmazonPollyFullAccess `
 
 2.4.Give your Role a name see example- then click create Role
 
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/8f35f4212e8378def4e6fab6d7e4b08b7e2d353a/img/Screenshot%202025-01-31%20101111.png)
+
+
+## Step 3: Configure a AWS Lambda function 
+
+3.1.Search for Lambda click on the orange buttun to create a function see example below-
+
+3.2.Choose Start Author from Scratch and give your lambda function a name
+
+
 ![image_alt]()
+
+
+3.3.Now add Permissions choose the existing role that we have created ealier see example below-
+
+![image_alt]()
+
+
+Proceed to create your functin by clicking the orange button below
+
+3.4.Now that our lambda function was successfully created copy the code below and paste it on the lambda code block and click deploy.
+
+
+```python
+import boto3
+import os
+import uuid
+
+def lambda_handler(event, context):
+    # Extract text from the API Gateway event
+    text = event['body']
+    
+    # Initialize Polly and S3 clients
+    polly = boto3.client('polly')
+    s3 = boto3.client('s3')
+    
+    # Generate a unique filename
+    filename = f"{uuid.uuid4()}.mp3"
+    
+    # Synthesize speech using Polly
+    response = polly.synthesize_speech(
+        Text=text,
+        OutputFormat="mp3",
+        VoiceId="Matthew"  # You can change the voice (e.g., "Matthew", "Salli")
+    )
+    
+    # Save the audio file to S3
+    s3.put_object(
+        Bucket="text-narrator-audio",  # Replace with your S3 bucket name
+        Key=filename,
+        Body=response['AudioStream'].read()
+    )
+    
+    # Return the S3 file URL
+    return {
+        'statusCode': 200,
+        'body': f"https://text-narrator-audio.s3.amazonaws.com/{filename}"
+    }
+
+
+
+```
+
+
+## code explanation
+
+This AWS Lambda function converts text into speech using Amazon Polly and stores the resulting audio file in an S3 bucket. When triggered by an API Gateway event, it extracts the text from the request body and initializes Polly and S3 clients. 
+
+Polly generates speech from the text using the specified voice (e.g., "Matthew"), and the resulting MP3 file is given a unique filename using `uuid`. The audio file is then uploaded to an S3 bucket `(text-narrator-audio)`. Finally, the function returns the public URL of the stored MP3 file, allowing users to access the generated speech audio.
+
+
+
+
+
+
+
+
+
 
 
 
