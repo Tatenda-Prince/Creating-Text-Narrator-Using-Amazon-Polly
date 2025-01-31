@@ -195,7 +195,7 @@ Click "Next."
 
 Review the settings and click "Create."
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/d1be90620592badb4a5c63b32681a721a16cb49a/img/Screenshot%202025-01-31%20102132.png)
 
 
 4.5.Deploy the API:
