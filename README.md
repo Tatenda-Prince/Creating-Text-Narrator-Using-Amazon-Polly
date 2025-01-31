@@ -223,7 +223,7 @@ Method: `POST`
 Body: `{"body": "Hello, this is a test narration."}`
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/515d21127ab197bc883f791672dbdefbaf1224cf/img/Screenshot%202025-01-31%20103921.png)
 
 
 5.2.The response will contain the S3 URL of the generated audio file.
