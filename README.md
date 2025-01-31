@@ -209,10 +209,51 @@ Choose a stage (e.g., `prod`).
 
 Note the API endpoint URL (e.g., `https://<api-id>.execute-api.<region>.amazonaws.com/prod`).
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/392b238a87721c385d67f040ca8de7f1eeb0037c/img/Screenshot%202025-01-31%20102214.png)
 
 
 ## Step 5: Test the API
+
+5.1.Use a tool like Postman to send a POST request to the API endpoint:
+
+URL: `https://<api-id>.execute-api.<region>.amazonaws.com/prod/narrate`
+
+Method: `POST`
+
+Body: `{"body": "Hello, this is a test narration."}`
+
+
+![image_alt]()
+
+
+5.2.The response will contain the S3 URL of the generated audio file.
+
+
+## Step 6: Verify the Audio File in S3
+
+
+6.1.Go to the S3 Console.
+
+
+6.2.Navigate to your bucket (text-narrator-audio).
+
+
+6.3.Verify that the audio file is present and downloadable.
+
+
+![image_alt]()
+
+
+
+# Congratulations
+
+We have Successfully created Amazon Polly which converts text into lifelike speech, enabling applications to interact with users in a more natural way. AWS Lambda handles the logic by processing incoming requests, interacting with Amazon Polly to generate speech, and storing the resulting audio files in Amazon S3. API Gateway acts as the front-facing interface, exposing the Lambda function as an HTTP endpoint, allowing users or applications to send text input and receive the corresponding speech output. Amazon S3 serves as the storage solution, securely holding the generated audio files for retrieval or further processing.
+
+
+
+
+
+
 
 
 
