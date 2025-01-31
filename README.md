@@ -190,7 +190,7 @@ Choose the Lambda function you created earlier
 Click "Next."
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Creating-Text-Narrator-Using-Amazon-Polly/blob/eb1396b35165f845d13424575e50c507aab40c59/img/Screenshot%202025-01-31%20101946.png)
 
 
 Review the settings and click "Create."
