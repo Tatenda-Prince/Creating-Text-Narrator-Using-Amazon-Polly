@@ -152,6 +152,88 @@ This AWS Lambda function converts text into speech using Amazon Polly and stores
 Polly generates speech from the text using the specified voice (e.g., "Matthew"), and the resulting MP3 file is given a unique filename using `uuid`. The audio file is then uploaded to an S3 bucket `(text-narrator-audio)`. Finally, the function returns the public URL of the stored MP3 file, allowing users to access the generated speech audio.
 
 
+## Step 4: Configure a API Gateway
+
+4.1.Search for API Gateway click on the orange buttun to create a function see example below-
+
+Click "Create API."
+
+Choose "HTTP API" and click "Build."
+
+![image_alt]()
+
+
+4.2.Name the API with any name you want
+
+
+![image_alt]()
+
+
+Click "Next."
+
+
+4.3.Add a Resource 
+
+Under Resources "click" create Resource and name it "narater"
+
+Note: Enable the CORS feature
+
+![image_alt]()
+
+
+4.4.Set the method to `POST` and the path to `/narrate`.
+
+Under "Attach integrations," select "Lambda."
+
+Choose the Lambda function you created earlier 
+
+Click "Next."
+
+
+![image_alt]()
+
+
+Review the settings and click "Create."
+
+![image_alt]()
+
+
+4.5.Deploy the API:
+
+Click "Deploy API."
+
+Choose a stage (e.g., `prod`).
+
+![image_alt]()
+
+
+Note the API endpoint URL (e.g., `https://<api-id>.execute-api.<region>.amazonaws.com/prod`).
+
+![image_alt]()
+
+
+## Step 5: Test the API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
